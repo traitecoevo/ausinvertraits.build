@@ -2,6 +2,14 @@ traits:
   description: Names and details of plant traits included in the AusTraits compilation
   type: list
   elements:
+    body_length:
+      description: Invertebrate body length
+      type: numeric
+      units: mm
+      label: Body length
+      values:
+        minimum: 0.1
+        maximum: 100000.0
     accessory_cost_mass:
       description: Mass of seed accessory costs, the proportion of a fruit that does not develop into a seed
       type: numeric

@@ -32,6 +32,19 @@ targets:
   taxon_list:
     command: read_csv_char("config/taxon_list.csv")
 
+  Cassis_2014_config:
+    command: >
+      subset_config("data/Cassis_2014/metadata.yml",
+                 traits_definitions,
+                 unit_conversions
+                 )
+  Cassis_2014:
+    command: >
+      load_dataset("data/Cassis_2014/data.csv",
+                  Cassis_2014_config,
+                  schema
+                 )
+
   Falster_2003_config:
     command: >
       subset_config("data/Falster_2003/metadata.yml",
@@ -62,6 +75,7 @@ targets:
   austraits_raw:
     command: >
       combine_datasets(
+        Cassis_2014,
         Falster_2003,
         Falster_2005_1,
         NULL)
