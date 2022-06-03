@@ -1,0 +1,25 @@
+Type: Compendium
+Package: austraits.build
+Title: Raw data and code used to build the AusTraits compilation
+Version: 3.0.2
+Maintainer: Daniel Falster <daniel.falster@unsw.edu.au>
+Authors@R: c(
+    person(given = "Daniel", family = "Falster", role = c("cre", "aut"), email = "daniel.falster@unsw.edu.au", comment = c(ORCID = "0000-0002-9814-092X")),
+    person(given = "Elizabeth", family = "Wenk", role = c("cur", "aut")),
+    person("ARDC", role = c("fnd")),
+    )
+Description: 
+BugReports: https://github.com/traitecoevo/ausinvertraits.build/issues
+URL: http://traitecoevo.github.io/ausinvertraits.build/
+License: BSD_2_clause + file LICENCE
+Depends:
+    R (>= 4.1.0),
+    austraits.build
+Remotes:
+    traitecoevo/austraits.build,
+    richfitz/remake
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.2.0
+Config/testthat/edition: 3
