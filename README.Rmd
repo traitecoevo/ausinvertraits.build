@@ -27,7 +27,7 @@ library(austraits.build)
 
 austraits.build::setup_build_process()
 
-ausinverts <- remake::make("austraits_raw")
+ausinverts <- remake::make("austraits")
 ```
 
 
