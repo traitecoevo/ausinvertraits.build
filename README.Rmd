@@ -13,20 +13,18 @@
 Installing austraits.build package
 
 ```{r}
-remotes::install_github("traitecoevo/austraits.build@seperate_definitions")
+remotes::install_github("traitecoevo/austraits.build@develop")
 ```
 
 Install remake?
 
 ## building dataset
 
-Update the build
+Update the build (remake.yml)
 
 ```{r}
 library(austraits.build)
-
 austraits.build::setup_build_process()
-
 ausinverts <- remake::make("austraits")
 ```
 

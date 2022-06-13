@@ -1,6 +1,13 @@
 .Rproj.user
+.DS_Store
 .Rhistory
 .RData
-.Ruserdata
 .remake
-export
+*.Rproj
+*.zip
+*.rds
+*.rda
+*.xlsx
+ignore
+raw
+

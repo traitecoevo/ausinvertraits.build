@@ -12,7 +12,7 @@ source:
     doi: unknown
 contributors:
   data_collectors:
-  - last_name: unknown
+    last_name: unknown
     given_name: unknown
     affiliation: unknown
     ORCID: unknown
@@ -24,10 +24,9 @@ dataset:
   custom_R_code: .na
   collection_date: 2014/2014
   taxon_name: species
-  site_name: .na
   description: unknown
   collection_type: unknown
-  sample_age_class: Life stage
+  sample_age_class: unknown
   sampling_strategy: unknown
   original_file: unknown
   notes: unknown
@@ -37,8 +36,10 @@ traits:
 - var_in: body_length
   unit_in: mm
   trait_name: body_length
-  value_type: mean
-  replicates: .na
+  entity_type: unknown
+  value_type: unknown
+  basis_of_value: unknown
+  replicates: unknown
   methods: unknown
 substitutions: .na
 taxonomic_updates: .na
