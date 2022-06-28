@@ -38,4 +38,11 @@ ausinverts <- remake::make("austraits")
 remake::make("tidy")
 ```
 
+## Setup a new study
+
+```{r}
+# create metatadat dtemplate
+metadata_create_template("Cassis_2014")
+
+```
 
