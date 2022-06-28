@@ -16,16 +16,26 @@ Installing austraits.build package
 remotes::install_github("traitecoevo/austraits.build@develop")
 ```
 
-Install remake?
 
 ## building dataset
 
-Update the build (remake.yml)
+Load library:
 
 ```{r}
+# Load librrary
 library(austraits.build)
+
+# Update the build (remake.yml)
 austraits.build::setup_build_process()
+
+# Build a datatset
+Cassis_2014 <- remake::make("Cassis_2014")
+
+# Build the whole compilation
 ausinverts <- remake::make("austraits")
+
+# Delete the cached items to rebuiuld all
+remake::make("tidy")
 ```
 
 
