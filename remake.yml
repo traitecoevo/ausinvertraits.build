@@ -45,39 +45,11 @@ targets:
                   schema
                  )
 
-  Falster_2003_config:
-    command: >
-      subset_config("data/Falster_2003/metadata.yml",
-                 traits_definitions,
-                 unit_conversions
-                 )
-  Falster_2003:
-    command: >
-      load_dataset("data/Falster_2003/data.csv",
-                  Falster_2003_config,
-                  schema
-                 )
-
-  Falster_2005_1_config:
-    command: >
-      subset_config("data/Falster_2005_1/metadata.yml",
-                 traits_definitions,
-                 unit_conversions
-                 )
-  Falster_2005_1:
-    command: >
-      load_dataset("data/Falster_2005_1/data.csv",
-                  Falster_2005_1_config,
-                  schema
-                 )
-
 
   austraits_raw:
     command: >
       combine_datasets(
         Cassis_2014,
-        Falster_2003,
-        Falster_2005_1,
         NULL)
 
   austraits:
